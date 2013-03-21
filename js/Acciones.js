@@ -5,28 +5,29 @@ $(document).ready(function(e) {
 	
 	document.addEventListener("deviceready", function(){
 	
-	$(' .btn').tap(function(){
+	$('.btn').tap(function(){
 	var boton=(($(this).attr('class')).split(' '))[1];	
 	
 	switch(boton)
 	{
 		case 'b1':
-			navigator.notificacion.beep(1);
+			navigator.notification.beep(1);
 		break; 
 		case 'b2':
-			navigator.notificacion.beep(2);
+			navigator.notification.beep(2);
 		break; 
 		case 'b3':
-		navigator.notificacion.beep(3);
+		navigator.notification.beep(3);
 		break; 
 		case 'b4':
-		navigator.notificacion.beep(4);
+		navigator.notification.beep(4);
 		break; 
 		case 'v1':
-		navigator.notificacion.vibrate(500);
+		navigator.notification.vibrate(500);
 		break; 
 		case 'v2':
-		navigator.notificacion.vibrate(500);
+		navigator.notification.vibrate(500);
+		navigator.notification.vibrate(500);
 		break; 
 		
 	
@@ -35,8 +36,7 @@ $(document).ready(function(e) {
 	
 	});
 	
-	
-	
+
 	
 	$('#derecha').swiperight(function(){
 		navigator.notification.alert("Deslizo a la derecha".function(){},"Practica 1","Aceptar");
